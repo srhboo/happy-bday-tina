@@ -141,6 +141,11 @@ function draw() {
     image(weird, 50, windowHeight / 2);
     pop();
 
+    for (let i = 0; i < phoneCoords.length; i++) {
+      const { x, y } = phoneCoords[i];
+      image(phone, x, y);
+    }
+
     if (view === "instructions") {
       push();
       fill(255);
@@ -177,11 +182,6 @@ function draw() {
         300
       );
     }
-  }
-
-  for (let i = 0; i < phoneCoords.length; i++) {
-    const { x, y } = phoneCoords[i];
-    image(phone, x, y);
   }
 
   if (keyIsDown(65)) {
