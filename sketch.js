@@ -65,13 +65,13 @@ function setup() {
   textFont(myFont);
   textSize(48);
   okButton = createButton("ok");
-  okButton.position(200, 770);
+  okButton.position(200, 570);
   okButton.mousePressed(() => {
     view = "play";
     okButton.hide();
   });
   secretButton = createButton("yes?");
-  secretButton.position(200, 770);
+  secretButton.position(200, 570);
   secretButton.mousePressed(() => {
     view = "note";
     secretButton.hide();
