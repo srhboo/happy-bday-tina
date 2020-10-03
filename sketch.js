@@ -149,12 +149,12 @@ function draw() {
     if (view === "instructions") {
       push();
       fill(255);
-      rect(85, 385, 410, 465);
+      rect(85, 185, 410, 465);
       pop();
       text(
         "help slutty safe anglerfish collect all the phones to appease tina the tinder god. wasd to move, enter to pick up.",
         100,
-        400,
+        200,
         400,
         500
       );
@@ -162,12 +162,12 @@ function draw() {
     if (view === "complete") {
       push();
       fill(255);
-      rect(85, 385, 410, 465);
+      rect(85, 185, 410, 465);
       pop();
       text(
         "good job you did it :^) want to read the secret msg? uwu",
         100,
-        400,
+        200,
         400,
         500
       );
